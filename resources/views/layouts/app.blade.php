@@ -8,6 +8,8 @@
 
     <title>Vote the Idea</title>
 
+    <link rel="shortcut icon" href="{{ asset('img/AmagamiSS.ico') }}" type="image/x-icon">
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
