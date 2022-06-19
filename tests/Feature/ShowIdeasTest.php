@@ -22,7 +22,7 @@ class ShowIdeasTest extends TestCase
             'description' => 'Description of my second idea',
         ]);
 
-        $response = $this->get(route('ideas.index'));
+        $response = $this->get(route('idea.index'));
 
         $response->assertSuccessful();
         $response->assertSee($ideaOne->title);
@@ -39,7 +39,7 @@ class ShowIdeasTest extends TestCase
             'description' => 'Description of my first idea',
         ]);
 
-        $response = $this->get(route('ideas.show', $idea));
+        $response = $this->get(route('idea.show', $idea));
 
         $response->assertSuccessful();
         $response->assertSee($idea->title);
@@ -83,12 +83,12 @@ class ShowIdeasTest extends TestCase
             'description' => 'Another Description for my first idea',
         ]);
 
-        $response = $this->get(route('ideas.show', $ideaOne));
+        $response = $this->get(route('idea.show', $ideaOne));
 
         $response->assertSuccessful();
         $this->assertTrue(request()->path() === 'ideas/my-first-idea');
 
-        $response = $this->get(route('ideas.show', $ideaTwo));
+        $response = $this->get(route('idea.show', $ideaTwo));
 
         $response->assertSuccessful();
         $this->assertTrue(request()->path() === 'ideas/my-first-idea-1');
