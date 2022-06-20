@@ -6,6 +6,7 @@
             </svg>
             <span class="ml-2">All ideas</span>
         </a>
+
     </div>
 
     <div class="idea-container bg-white rounded-xl flex mt-4">

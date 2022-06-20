@@ -766,6 +766,10 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -826,6 +830,9 @@ select {
 }
 .block {
   display: block;
+}
+.inline-block {
+  display: inline-block;
 }
 .flex {
   display: flex;
@@ -1157,13 +1164,13 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(247 248 252 / var(--tw-bg-opacity));
 }
-.bg-indigo-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 242 255 / var(--tw-bg-opacity));
-}
 .bg-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(139 96 237 / var(--tw-bg-opacity));
+}
+.bg-indigo-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 242 255 / var(--tw-bg-opacity));
 }
 .bg-yellow {
   --tw-bg-opacity: 1;
